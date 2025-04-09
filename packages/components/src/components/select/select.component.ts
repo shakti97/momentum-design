@@ -490,7 +490,7 @@ class Select extends FormInternalsMixin(DataAriaLabelMixin(FormfieldWrapper)) im
   }
 
   private shouldFocusSelect(): boolean {
-    if (this.disabled || this.readonly) {
+    if (this.disabled) {
       return false;
     }
     return true;
